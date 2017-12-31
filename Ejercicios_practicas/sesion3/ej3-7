@@ -1,0 +1,8 @@
+#!/bin/bash
+
+VAR1=hola
+VAR2=adios
+VAR3=14
+
+print "\n%10s" $VAR1
+print ""

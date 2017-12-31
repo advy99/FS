@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $# != 1 ];
+	then
+		printf "Solo se admite un parametro\n";
+	
+	elif [ ! -e $1 ];
+		then
+			printf "El archivo $1 no existe\n";
+	else
+		plano_y_ejecutable=`test -f $1 -a -x $1 && echo true || echo false`;
+		enlace_simbolico=`test -h $1 && echo true || echo false`;
+		printf "El archivo $1 es de texto plano y ejecutable: $plano_y_ejecutable\n"
+		printf "El archivo $1 es un enlace simbolico: $enlace_simbolico\n";
+fi
+
+

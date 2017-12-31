@@ -1,0 +1,18 @@
+#/bin/bash
+
+if [[ $# -ne 2 ]]; then
+   printf "Solo se admiten dos parametros.\n";
+   exit;
+fi
+
+if [[ ! -d $1 ]]; then
+   printf "El primer parametro ha de ser un directorio.\n";
+   exit;
+fi
+
+if ! $(let esnum=$2); then
+   printf "El segundo parametro ha de ser un numero.\n";
+   exit;
+fi
+
+find $1 -size -$2c -a -type f > archivosSizN.txt;

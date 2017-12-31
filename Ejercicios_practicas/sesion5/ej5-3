@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -ne 0 ]; then
+   printf " LOCO, TE HAS EQUIVOCADO \n";
+   exit;
+fi
+read tecla;
+case $tecla in
+   q|w|e|r|t|y|u|i|o|p) printf "FILA 1\n";;
+   a|s|d|f|g|h|j|k|l) printf "FILA 2\n";;
+   z|x|c|v|b|n|m) printf "FILA 3\n";;
+   *) printf "NO ES VALIDO";;
+esac

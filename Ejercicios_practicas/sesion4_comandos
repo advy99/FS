@@ -1,0 +1,98 @@
+ej4-1)
+	n_dias=365
+	dia_actual= `date +%j`
+	echo "Faltan $[ ($n_dias - $dia_actual) / 7 ] semanas para fin de año"
+
+ej4-2)
+	si ponemos v++ suma uno despues de la evalucion
+	si ponemos ++v suma uno antes de la evalucion
+
+ej4-3)
+	x=5
+	x=$x/5
+	echo $x
+	x=5
+	x/=5
+	echo $x
+
+ej4-4)
+	Sigue igual
+
+ej4-5)
+	echo (3-2)/5 | bc -l
+
+	echo "(3-2)/5" | bc -l
+
+ej4-6)
+	 Evalúa cada ARG como una expresión aritmética.  La evaluación se hace
+    con enteros de longitud fija, sin revisar desbordamientos, aunque la
+    la división por 0 se captura y se marca como un error.  La siguiente
+    lista de operadores está agrupada en niveles de operadores de la misma
+    prioridad.  Se muestran los niveles en orden de prioridad decreciente.
+
+ej4-7)
+	let w=3+4 x=1+2
+
+ej4-8)
+	ejemplo1
+	no
+	6
+
+	ejemplo2
+	no
+	5
+
+	ejemplo3
+	si #APARECE SALIDA `ls`
+	5
+
+	ejemplo4
+	no
+	6
+
+	ejemplo5
+	no
+	5
+	
+	ejemplo6
+	si #APARECE SALIDA `ls`
+	5
+	
+	ejemplo7
+	0
+	0
+
+	ejemplo8
+	1
+
+	ejemplo9
+	3 no es mayor que 5
+
+ej4-9)
+	VER GUION
+
+
+ej4-11)
+	VER GUION
+ej4-12)
+	a)Comprueba que el archivo sesion5.pdf existe y es un fichero de texto regular
+
+	b)if test -f ./sesion5.pdf ; then printf “El archivo ./sesion5.pdf existe\n”; else printf "EL archivo no exixte\n"; fi
+
+	c)if test -f ./sesion5.pdf ; then printf “El archivo ./sesion5.pdf existe\n”; elif [ -d /bin ]; then printf "/bin es un directorio\n"; fi
+
+	d)	VER GUION
+
+ej4-13)VER GUION
+
+ej4-14)VER GUION
+ej4-15)VER GUION
+ej4-16)VER GUION
+
+ej4-17)
+	find / -name *[0-9]*e
+	find / -name *[2-9]*e
+
+
+ej4-18)
+	| grep -c ^

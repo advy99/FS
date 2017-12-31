@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+   printf "Solo se admite un parametro\n";
+   exit;
+fi
+
+case "$1" in
+   1 | "ene") printf "Enero";;
+   2 | "feb") printf "Febrero";;
+   3 | "mar") printf "Marzo";;
+   4 | "abr") printf "Abril";;
+   5 | "may") printf "Mayo";;
+   6 | "jun") printf "Junio";;
+   7 | "jul") printf "Julio";;
+   8 | "ago") printf "Agosto";;
+   9 | "sep") printf "Septiembre";;
+   10 | "oct") printf "Octubre";;
+   11 | "nov") printf "Noviembre";;
+   12 | "dic") printf "Diciembre";;
+   *) printf "Ha introducido un mes erroneo";;
+
+esac
+
+printf "\n";

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -ne 2 ];
+	then
+		printf "Solo se admiten dos parametros\n";
+		exit;
+fi
+
+if [[ $1 != .* || $2 != /* ]];
+		then
+			printf "El primer parametro ha de ser una ruta relativa y el segundo una absoluta\n";
+	elif test -f $1 ;
+		then
+			printf "El archivo $1 existe\n";
+
+	elif test -d $2 ;
+		then
+			printf "$2 es un directorio\n";
+
+fi

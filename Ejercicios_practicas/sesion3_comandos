@@ -1,0 +1,65 @@
+Sesion 3
+
+	ej3.1)
+			USER=antonio
+			DESKTOP_SESSION=gnome
+			PWD=/home/antonio
+			HOME=/home/antonio
+			XDG_SESSION_DESKTOP=gnome
+
+	ej3.2)
+			Exportando la variable con:
+				export variable
+
+	ej3.3)
+			Toma el comando ls -l como una cadena de caracteres
+
+	ej3.4)
+			Toma $numero como una cadena de caracteres, luego concatena el +1
+
+	ej3.5)
+			Archivo en $HOME/Documentos/Universidad/FS/Ejercicios\ de\ practicas/sesion3/saludo:
+
+			#!/bin/bash
+			printf "Hola $1"
+
+
+	ej3.6)
+			#!/bin/bash
+			printf "Hola $*"
+
+	ej3.7)
+		a)printf "%15s\n" $VAR1 $VAR2 $VAR3
+		b)Locales, ya que no las hemos importado
+		c)unset VAR2
+		d)No, ya que no las hemos importado
+		e)LISTA=($VAR1 $VAR2 $VAR3)
+		f)printf "${LISTA[1]}\n"
+	
+	ej3.8)
+		a)alias ne="ls . | wc -l"
+		b)alias ne="ls $HOME | wc -l"
+
+	ej3.9)
+		a)find $HOME -size 1
+		b)find $HOME -size 1 > archivosP
+	
+	ej3.10)
+		a)find . -name "*ejemplo*"
+
+	ej3.11)
+		man find
+		man grep
+
+	ej3.12)
+		a)grep -m 1 nombreUsuario /etc/passwd -o | tail -1
+
+	ej3.13)
+		a)find $HOME ! -perm -o+r | wc -l
+		
+
+	ej3.14)
+		b)#!/bin/bash
+		
+		print "$1 tiene `ls $1 | wc -l` elemento\n"
+

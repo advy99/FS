@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+printf "$1 tiene `ls $1 | wc -l` elemento\n"

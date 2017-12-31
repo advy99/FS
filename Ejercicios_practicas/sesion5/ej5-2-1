@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+   printf "Se necesita un unico parametro\n";
+   exit;
+fi
+
+if [ ! -d $1 ]; then
+   printf "Debe ser un directorio\n";
+   exit;
+fi
+
+for elemento in $1/*; do
+   printf "$elemento ----- ";
+
+   if [ -d $elemento ];then
+      printf " Directorio\n";
+
+   elif [ -f $elemento ]; then
+      printf " Fichero\n";
+
+   else
+      printf " Enlace\n";
+   fi
+
+done

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+   printf "Necesita dos argumentos\n";
+   exit;
+fi
+
+if [ ! -d $1 ] ; then
+   printf "El primero debe ser un directorio y el segundo un entero\n";
+   exit;
+fi
+
+if ! $(let esnum=$2); then
+   printf "El segundo parametro ha de ser un numero.\n";
+   exit;
+fi
+
+find $1 -size $2c > archivosSizN.txt

@@ -1,0 +1,3 @@
+/home/antonio/.config/discord/0.0.2/modules/discord_toaster/node_modules/lodash/stubObject.js
+/home/antonio/.config/discord/0.0.2/modules/discord_toaster/node_modules/lodash/_getMapData.js
+/home/antonio/.cache/filezilla/default_localtreeview20x20.png

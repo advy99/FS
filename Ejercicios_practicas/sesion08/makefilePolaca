@@ -1,0 +1,24 @@
+
+#Compilador, por defecto gcc, puede ser g++
+CC=gcc
+
+ARCH_CABECERA=./cabeceras
+OBJS="main.o stack.o getop.o getch.o"
+
+calculadoraPolaca: $(OBJS)
+	$(CC) -I$(ARCH_CABECERA) -o $@ $(OBJS)
+
+main.o: main.c
+	$(CC) -I$(ARCH_CABECERA) -c $<
+)
+stack.o: stack.c
+	$(CC) -I$(ARCH_CABECERA) -c $<
+)
+getop.o: getop.c
+	$(CC) -I$(ARCH_CABECERA) -c $<
+)
+getch.o: getch.c
+	$(CC) -I$(ARCH_CABECERA) -c $<
+)
+borrar:
+	rm calculadoraPolaca main.o stack.o getop.o getch.o

@@ -1,0 +1,24 @@
+Sesion 2
+
+	ej2-1:
+		a)chmod o+x ej2-1
+		b)chmod g+w ej2-1
+		c)chmod g-r,o-r ej2-1
+		d)chmod u+x,o+w ej2-1
+		e)chmod g+x e*
+
+	ej2-2
+		a)ls .. > ej31
+		b)tail -2 ej31 > ej32
+		c)cat ej31 >> ej32
+
+	ej2-3:
+		a)ls -l /etc | tail -6
+		b)ls {e,f}* | wc -m
+
+	ej2-4:
+		a)man chmod | tail -17 > ejercicio1
+		b)pwd >> ejercicio1
+		c)(who ; pwd ) > ejercicio3
+		d)cat ejercicio1 &>> ejercicio3
+		e)chmod g-r,a+x ejercicio{1,3}

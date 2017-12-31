@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -ne 0 ]; then
+   printf "No se necesitan argumentos\n";
+   exit;
+fi
+
+printf "Introduzca un numero entre 1 y 10: ";
+
+read numero;
+
+while [ $numero -gt 10 ] || [ $numero -lt 1 ]; do
+   printf "Introduzca un numero entre 1 y 10: ";
+   read numero;
+done

@@ -1,0 +1,57 @@
+ejercicio1.1:
+
+	a)mkdir ejercicio1 ejercicio1/Ejer1 ejercicio1/Ejer2 ejercicio1/Ejer3 ejercicio1/Ejer1/Ejer21
+
+ej1.2:
+	a)mv Ejer1/Ejer21/ Ejer2
+
+	b)cp Ejer1/*.*x* Ejer3
+
+	c)arch100.txt y ejer3arch.txt
+
+ejer1.3:
+	a)ls ..
+
+ejer1.4:
+	Actualiza la hora de modificacion
+
+ejercico1.5:
+	a)/home/antonio NO
+
+	b)mkdir FS FP CA ALEM FFT
+	
+	c)cp /etc/{hosts,passwd} FS/
+	
+	d) cat hosts
+		cat passwd
+
+ejercicio1.6:
+	a)rmdir Sesion.4
+	b)ls Sesion.?
+	c)ls *.1
+	d)ls *.[12]
+	e)ls *si*
+	f)ls *si*.2
+
+ejercicio1.7:
+	a)ls ????
+	b)ls [df]*
+	c)ls {sa,se,ad}*
+	d)ls t*r
+
+ejercicio1.8:
+	a)ls $HOME/tem*.{gz,zip}
+	b)ls tem*.{gz,zip}
+
+ejercicio1.9:
+	a)head -10 ej1-9.txt 
+	b)tail -5 ej1-9.txt 
+
+ejercicio1.10:
+	sort -d archivo
+	sort -R archivo
+	sort -n archivo
+
+ejercicio1.11:
+	a)ls *.{txt,c}
+

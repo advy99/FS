@@ -1,0 +1,24 @@
+#/bin/bash
+
+if [[ $# -ne 1 ]]; then
+   printf "Solo se admite un parametro.\n";
+   exit;
+fi
+
+if [[ ! -d $1 ]]; then
+   printf "El parametro ha de ser un directorio existente.\n";
+   exit;
+fi
+
+for archivo in $1/*; do
+   printf "$archivo ";
+   if [ -d $archivo ]; then
+         printf " -- Directorio \n";
+      elif [ -h $archivo ]; then
+         printf " -- Enlace \n";
+      elif [ -f $archivo ]; then
+         printf " -- Archivo regular \n";
+   fi
+done
+
+printf "\n";

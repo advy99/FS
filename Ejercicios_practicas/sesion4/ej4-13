@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $# != 1 ];
+	then
+		printf "Ha de introducir un único parámetro\n";
+		exit;
+fi
+
+if  test -O $1 ;
+	then
+		printf "El usuario es propietario de $1\n";
+	else
+		printf "El usuario no es propietario de $1\n";
+fi
+
+if test -r $1 ;
+	then
+		printf "El usuario tiene permisos de lectura para $1\n";
+	else
+		printf "El usuario no tiene permisos de lectura para $1\n";
+fi

@@ -1,0 +1,36 @@
+ej8-1)
+   g++ -g -o ejemplo9-1 main.cpp factorial.cpp hello.cpp
+   gdb ejemplo9-1
+      run
+   --------------SALIDA---------------
+      Starting program: /home/antonio/Documentos/Universidad/FS/Documentos de practicas/ArchivosModuloII/sesion09/ejemplo9-1
+      Hello World!
+      The factorial of 7 is 5040
+      [Inferior 1 (process 2260) exited normally]
+
+ej8-2)
+      list main
+      list factorial
+
+ej8-3)
+   g++ -g -o ej8-3 mainsesion09a.cpp
+   gdb ej8-3
+      break 15
+      break 29
+      break 42
+      break 47
+      run
+      info locals
+      p/x $pc
+      p/x $sp
+
+ej8-4)
+   display final1
+   display final2
+
+ej8-5)
+   delete 2 3 4
+
+ej8-6)
+   asigna a final2 la variable i + 2 en cada iteracion, con la que i aumenta 1, hasta 100,
+   por lo que final2 finaliza con 102

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ $# -gt 1 ];
+	then
+		printf "Solo se admite un parametro, ejecute \"$0 -h\" para más información\n";
+		exit;
+	elif [ $# -eq 1 ];
+		then
+			if [ $1 = "-h" ];
+				then
+					printf "\nGuión creado para comprobar si el numero de dias hasta fin de año es multiplo de 5\nEjecute \" $0 \" para ejecutarlo y \"$0 -h \" para mostrar esta ayuda\n\n";
+					exit;
+				else
+					printf "Parametro no reconocido, ejecute \"$0 -h \" para más información\n";
+			fi
+	else
+		n_dia=`date +%j`;
+		n_dias_fin_anio=`expr 365 - $n_dia`;
+
+		if [ `expr $n_dias_fin_anio % 5` -eq 0 ];
+			then
+				printf "El número de dias hasta fin de año es multiplo de 5\n";
+			else
+				printf "El número de dias hasta fin de año no es multiplo de 5\n";
+		fi
+fi
